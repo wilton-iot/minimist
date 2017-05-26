@@ -1,4 +1,5 @@
-var parse = require('../');
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+var parse = require('minimist/');
 var test = require('tape');
 
 test('flag boolean true (default all --args to boolean)', function (t) {
@@ -30,3 +31,5 @@ test('flag boolean true only affects double hyphen arguments without equals sign
     t.deepEqual(typeof argv.honk, 'boolean');
     t.end();
 });
+
+return module.exports;});

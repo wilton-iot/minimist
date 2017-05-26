@@ -1,3 +1,4 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 module.exports = function (args, opts) {
     if (!opts) opts = {};
     
@@ -234,3 +235,5 @@ function isNumber (x) {
     return /^[-+]?(?:\d+(?:\.\d*)?|\.\d+)(e[-+]?\d+)?$/.test(x);
 }
 
+
+return module.exports;});

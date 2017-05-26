@@ -1,4 +1,5 @@
-var parse = require('../');
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+var parse = require('minimist/');
 var test = require('tape');
 
 test('-', function (t) {
@@ -29,3 +30,5 @@ test('move arguments after the -- into their own `--` array', function(t) {
         parse([ '--name', 'John', 'before', '--', 'after' ], { '--': true }),
         { name: 'John', _: [ 'before' ], '--': [ 'after' ] });
 });
+
+return module.exports;});

@@ -1,4 +1,5 @@
-var parse = require('../');
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+var parse = require('minimist/');
 var test = require('tape');
 
 test('numeric short args', function (t) {
@@ -65,3 +66,5 @@ test('short and long', function (t) {
     );
     t.end();
 });
+
+return module.exports;});

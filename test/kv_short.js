@@ -1,4 +1,5 @@
-var parse = require('../');
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+var parse = require('minimist/');
 var test = require('tape');
 
 test('short -k=v' , function (t) {
@@ -14,3 +15,5 @@ test('multi short -k=v' , function (t) {
     var argv = parse([ '-a=whatever', '-b=robots' ]);
     t.deepEqual(argv, { a: 'whatever', b: 'robots', _: [] });
 });
+
+return module.exports;});

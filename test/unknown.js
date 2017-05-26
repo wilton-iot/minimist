@@ -1,4 +1,5 @@
-var parse = require('../');
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+var parse = require('minimist/');
 var test = require('tape');
 
 test('boolean and alias is not unknown', function (t) {
@@ -100,3 +101,5 @@ test('value following -- is not unknown', function (t) {
     })
     t.end();
 });
+
+return module.exports;});

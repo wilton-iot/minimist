@@ -1,4 +1,5 @@
-var parse = require('../');
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+var parse = require('minimist/');
 var test = require('tape');
 
 test('parse args', function (t) {
@@ -195,3 +196,5 @@ test('nested dotted objects', function (t) {
     t.same(argv.beep, { boop : true });
     t.end();
 });
+
+return module.exports;});

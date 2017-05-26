@@ -1,4 +1,5 @@
-var parse = require('../');
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+var parse = require('minimist/');
 var test = require('tape');
 
 test('stops parsing on the first non-option when stopEarly is set', function (t) {
@@ -13,3 +14,5 @@ test('stops parsing on the first non-option when stopEarly is set', function (t)
 
     t.end();
 });
+
+return module.exports;});

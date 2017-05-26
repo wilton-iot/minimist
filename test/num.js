@@ -1,4 +1,5 @@
-var parse = require('../');
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+var parse = require('minimist/');
 var test = require('tape');
 
 test('nums', function (t) {
@@ -34,3 +35,5 @@ test('already a number', function (t) {
     t.deepEqual(typeof argv._[0], 'number');
     t.end();
 });
+
+return module.exports;});

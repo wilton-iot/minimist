@@ -1,5 +1,6 @@
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 var test = require('tape');
-var parse = require('../');
+var parse = require('minimist/');
 
 test('long opts', function (t) {
     t.deepEqual(
@@ -29,3 +30,5 @@ test('long opts', function (t) {
     );
     t.end();
 });
+
+return module.exports;});

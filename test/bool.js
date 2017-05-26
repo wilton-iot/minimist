@@ -1,4 +1,5 @@
-var parse = require('../');
+define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
+var parse = require('minimist/');
 var test = require('tape');
 
 test('flag boolean default false', function (t) {
@@ -164,3 +165,5 @@ test('boolean --boool=false', function (t) {
     t.same(parsed.boool, false);
     t.end();
 });
+
+return module.exports;});
