@@ -1,6 +1,6 @@
 define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 var parse = require('minimist/');
-var test = require('tape');
+var test = require('tape-compat');
 
 test('flag boolean default false', function (t) {
     var argv = parse(['moo'], {

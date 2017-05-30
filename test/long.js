@@ -1,5 +1,5 @@
 define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
-var test = require('tape');
+var test = require('tape-compat');
 var parse = require('minimist/');
 
 test('long opts', function (t) {

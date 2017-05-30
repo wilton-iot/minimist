@@ -1,6 +1,6 @@
 define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 var parse = require('minimist/');
-var test = require('tape');
+var test = require('tape-compat');
 
 test('boolean and alias is not unknown', function (t) {
     var unknown = [];

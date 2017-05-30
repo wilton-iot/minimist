@@ -1,6 +1,6 @@
 define(function(){var require = WILTON_requiresync;var module = {exports: {}};var exports = module.exports;
 var parse = require('minimist/');
-var test = require('tape');
+var test = require('tape-compat');
 
 test('dotted alias', function (t) {
     var argv = parse(['--a.b', '22'], {default: {'a.b': 11}, alias: {'a.b': 'aa.bb'}});
