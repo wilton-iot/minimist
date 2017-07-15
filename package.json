@@ -41,5 +41,12 @@
     "email": "mail@substack.net",
     "url": "http://substack.net"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "wilton": {
+    "excludes": [
+      "example",
+      "test",
+      "readme.markdown"
+    ]
+  }
 }
